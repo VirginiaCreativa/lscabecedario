@@ -1,0 +1,46 @@
+{
+  "short_name": "Virginia.Creativa",
+  "name": "LSC Abecedario",
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "LscAbecedario"
+  },
+  "icons": [{
+      "16": "icon16.png",
+      "24": "icon24.png",
+      "32": "icon32.png"
+    },
+    {
+      "src": "/assets/icons/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/assets/icons/icon16.png",
+      "type": "image/png",
+      "sizes": "238x293"
+    },
+    {
+      "src": "/assets/icons/icon24.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/assets/icons/icon32.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "manifest_version": 2,
+  "start_url": ".",
+  "display": "standalone",
+  "scope": "/app/",
+  "background_color": "#000",
+  "version": "1.0",
+  "permissions": ["storage"]
+}

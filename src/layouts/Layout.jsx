@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
+import Header from './Header/Header';
 
 const Wrapper = styled.div`
   min-height: 82vh;
@@ -7,13 +8,15 @@ const Wrapper = styled.div`
 
 function Layout({ children }) {
   return (
-    <div>
-      <header>LSC Abecedario</header>
+    <Fragment>
+      <Header />
       <Wrapper>{children}</Wrapper>
       <footer>
         <p>found/dev: @Virginia.Creativa</p>
+        <p>gráfico seña: @Arte.Dise34</p>
+        <p>modelo: @YuliModel</p>
       </footer>
-    </div>
+    </Fragment>
   );
 }
 

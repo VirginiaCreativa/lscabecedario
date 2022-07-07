@@ -1,6 +1,5 @@
 import { useState, Fragment } from 'react';
 import Layouts from './layouts/Layout';
-import './App.css';
 
 function App() {
   return (

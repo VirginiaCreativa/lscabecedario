@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
+import Navigation from './Navigation/Navigation';
 
 const Wrapper = styled.div`
   padding: 0 60px 0 40px;
@@ -26,7 +27,9 @@ const Layout = ({ children }) => {
       <Header />
       <Wrapper>
         <div className="row screen">
-          <div className="col-1">navs</div>
+          <div className="col-1">
+            <Navigation />
+          </div>
           <div className="col-11">{children}</div>
         </div>
         <div className="row footer">

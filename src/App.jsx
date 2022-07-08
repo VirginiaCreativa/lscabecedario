@@ -1,4 +1,4 @@
-import { useState, Fragment } from 'react';
+import { Fragment } from 'react';
 import Layouts from './layouts/Layout';
 
 function App() {

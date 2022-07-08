@@ -14,6 +14,9 @@ const GlobalStyled = createGlobalStyle`
       color: ${Variables.blue1};
     }
   }
+  h2 {
+    line-height: 1.5em;
+  }
   h1,
   h2,
   h3,
@@ -21,7 +24,7 @@ const GlobalStyled = createGlobalStyle`
   h5,
   h6 {
     margin-bottom: 0;
-    letter-spacing: -1.5px;
+    letter-spacing: -1.8px;
     color: ${Variables.black1};
   }
   p,

@@ -4,18 +4,29 @@ import Logo from '../../common/Logo/Logo';
 
 const HeaderStyle = styled.header`
   display: flex;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 30px;
-  padding: 15px;
+  padding: 40px 20px;
+  .col-10 {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 function Header() {
   return (
     <>
       <HeaderStyle>
-        <Logo />
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-1">
+              <Logo size="50px" />
+            </div>
+            <div className="col-10">
+              <h2>Abecedario</h2>
+            </div>
+          </div>
+        </div>
       </HeaderStyle>
     </>
   );

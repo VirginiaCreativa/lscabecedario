@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import LogoSVG from '/src/assets/icons/icon32.png';
+import LogoSVG from '/src/assets/logo/Logo.svg';
 
-const HeaderStyle = styled.div`
-  display: flex;
-`;
+const LogoStyled = styled.div``;
 
 const ImgStyle = styled.img`
   height: ${({ size }) => size || '40px'};
@@ -13,11 +11,9 @@ const ImgStyle = styled.img`
 const Logo = ({ size }) => {
   return (
     <>
-      <HeaderStyle>
-        <h1>LSC</h1>
+      <LogoStyled>
         <ImgStyle src={LogoSVG} alt="Icono de Logo LSC Colombia" size={size} />
-        <h2>Abecedario</h2>
-      </HeaderStyle>
+      </LogoStyled>
     </>
   );
 };

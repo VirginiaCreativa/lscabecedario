@@ -4,7 +4,7 @@ import Variables from './VariableStyled';
 const GlobalStyled = createGlobalStyle`
   body {
     background: ${Variables.body};
-    font-family:  'Poppins', sans-serif !important;
+    font-family:  'Montserrat', sans-serif !important;
   }
   a {
     text-decoration: none !important;
@@ -21,7 +21,7 @@ const GlobalStyled = createGlobalStyle`
   h5,
   h6 {
     margin-bottom: 0;
-    letter-spacing: -1px;
+    letter-spacing: -1.5px;
     color: ${Variables.black1};
   }
   p,

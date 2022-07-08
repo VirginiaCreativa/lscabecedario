@@ -63,7 +63,7 @@ Error generating stack: `+i.message+`
   h1 {
     font-weight: 800;
   }
-`,fg=()=>U(Xl,{children:U(ug,{children:le("div",{className:"row",children:[U("div",{className:"col-1 d-flex justify-content-center",children:U(mg,{size:"50px"})}),U("div",{className:"col-11",children:U("h1",{children:"Abecedario"})})]})})}),ie={black1:"#2f3640",black2:"#353b48",grey0:"#dfe4ea",grey1:"#a4b0be",grey2:"#747d8c",grey3:"#57606f",grey4:"#2f3542",grey4:"#607F9F",grey5:"#eff0f0",red1:"#ff6b81",red2:"#ff4757",green1:"#24e9d0",green2:"#2ed573",blue1:"#1149bf",blue2:"#1e90ff",blue3:"#1b1e34",yellow1:"#eccc68",yellow2:"#ffa502",body:"#FFF"},gg=Vr.footer`
+`,fg=()=>U(Xl,{children:U(ug,{children:le("div",{className:"row",children:[U("div",{className:"col-1 d-flex justify-content-center",children:U(mg,{size:"50px"})}),U("div",{className:"col-11",children:U("h1",{children:"Abecedario"})})]})})}),ie={black1:"#2f3640",black2:"#353b48",grey0:"#dfe4ea",grey1:"#a4b0be",grey2:"#747d8c",grey3:"#57606f",grey4:"#607F9F",grey5:"#eff0f0",red1:"#ff6b81",red2:"#ff4757",green1:"#24e9d0",green2:"#2ed573",blue1:"#1149bf",blue2:"#1e90ff",blue3:"#1b1e34",yellow1:"#eccc68",yellow2:"#ffa502",body:"#FFF"},gg=Vr.footer`
   display: flex;
   justify-content: center;
   .box {

@@ -1,0 +1,70 @@
+{
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-concentric-order",
+    "stylelint-config-standard",
+    "stylelint-config-styled-components",
+    "stylelint-config-prettier"
+  ],
+  "processors": ["stylelint-processor-styled-components"],
+  "customSyntax": "postcss-lit",
+  "syntax": ["js", "jsx", "scss"],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "at-rule-empty-line-before": null,
+    "no-descending-specificity": null,
+    "no-empty-source": null,
+    "declaration-empty-line-before": null,
+    "string-quotes": null,
+    "number-leading-zero": null,
+    "declaration-no-important": null,
+    "selector-class-pattern": null,
+    "declaration-colon-newline-after": null,
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ],
+    "order/properties-order": [
+      "content",
+      "display",
+      "position",
+      "background",
+      "background-image",
+      "background-size",
+      "z-index",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "flex-direction",
+      "flex-wrap",
+      "flex-flow",
+      "justify-content",
+      "justify-items",
+      "align-items",
+      "align-content",
+      "gap",
+      "opacity",
+      "overflow",
+      "transform",
+      "box-sizing",
+      "max-width",
+      "width",
+      "max-height",
+      "height",
+      "padding",
+      "margin",
+      "border",
+      "box-shadow",
+      "color",
+      "font-family",
+      "font-size",
+      "font-weight",
+      "line-height",
+      "letter-spacing",
+      "text-align"
+    ]
+  }
+}

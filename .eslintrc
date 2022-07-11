@@ -1,15 +1,14 @@
 {
   "extends": [
     "airbnb",
-    "airbnb/hooks",
+    "airbnb-base",
+    "prettier",
+    "plugin:jsx-a11y/recommended",
+    "eslint:recommended",
     "plugin:prettier/recommended",
     "eslint:recommended",
     "plugin:react/recommended",
-    "prettier/react",
-    "prettier/prettier",
-    "prettier/standard",
-    "plugin:compat/recommended",
-    "plugin:cypress/recommended"
+    "plugin:import/recommended"
   ],
   "env": {
     "es6": true,
@@ -18,9 +17,10 @@
     "node": true,
     "jquery": true
   },
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": 8,
+    "requireConfigFile": false,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true,
@@ -31,13 +31,13 @@
   "plugins": [
     "react",
     "react-hooks",
-    "jsx-a11y",
-    "compat",
-    "html",
     "jest",
-    "prettier"
+    "prettier",
+    "jsx-a11y",
+    "import"
   ],
   "rules": {
+    "import/extensions":0,
     "react/jsx-filename-extension": [
       1,
       {
@@ -60,7 +60,7 @@
     ],
     "react/react-in-jsx-scope": 0,
     "react/jsx-props-no-spreading": 0,
-    "import/no-unresolved": [2, { "caseSensitive": false }],
+    "import/no-unresolved":0,
     "camelcase": "off",
     "no-unused-vars": 0,
     "no-shadow": "off",

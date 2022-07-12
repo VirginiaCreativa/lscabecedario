@@ -5,12 +5,12 @@ import Logo from '../../common/Logo/Logo';
 
 const HeaderStyle = styled.header`
   display: inline-grid;
-  grid-template-columns: 62px 1fr;
+  grid-template-columns: 60px 1fr;
   justify-content: center;
   justify-items: center;
   gap: 20px;
   width: 100vw;
-  padding: 16px 60px 16px 40px;
+  padding: 16px 20px;
   .row {
     width: 100vw;
   }

@@ -37,7 +37,7 @@ function Footer() {
           Gráfico: <span>@Arte.Dise34</span>
         </p>
         <p>
-          Señante: <span>@YuliSenante</span>
+          Señante: <span>@YuleSenante</span>
         </p>
       </div>
     </FooterCSS>

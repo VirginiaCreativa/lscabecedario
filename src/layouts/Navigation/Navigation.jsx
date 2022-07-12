@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import Variable from '../../styles/VariableStyled';
 
 const NavigationCSS = styled.nav`
@@ -8,6 +9,8 @@ const NavigationCSS = styled.nav`
   min-height: 88vh;
   ul {
     list-style: none;
+    margin-left: 0;
+    padding-left: 0;
     li {
       margin-bottom: 10px;
       cursor: pointer;
@@ -24,27 +27,25 @@ const NavigationCSS = styled.nav`
   }
 `;
 
-const Navigation = () => {
+function Navigation() {
   return (
-    <>
-      <NavigationCSS>
-        <ul>
-          <li>
-            <i class="bx bx-font"></i>
-          </li>
-          <li>
-            <i class="bx bxs-keyboard"></i>
-          </li>
-          <li>
-            <i class="bx bx-joystick"></i>
-          </li>
-          <li>
-            <i class="bx bx-book-open"></i>
-          </li>
-        </ul>
-      </NavigationCSS>
-    </>
+    <NavigationCSS>
+      <ul>
+        <li>
+          <i className="bx bx-font" />
+        </li>
+        <li>
+          <i className="bx bxs-keyboard" />
+        </li>
+        <li>
+          <i className="bx bx-joystick" />
+        </li>
+        <li>
+          <i className="bx bx-book-open" />
+        </li>
+      </ul>
+    </NavigationCSS>
   );
-};
+}
 
 export default Navigation;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import Variable from '../../styles/VariableStyled';
 
 const FooterCSS = styled.footer`
@@ -7,12 +8,11 @@ const FooterCSS = styled.footer`
   justify-content: center;
   .box {
     display: flex;
-    justify-content: center;
     align-content: center;
-    border-radius: 100px;
-    padding: 20px 0;
-    width: 40%;
+    justify-content: center;
     background-color: #fff;
+    border-radius: 100px;
+    padding: 20px;
     p {
       font-size: 0.75rem;
       margin: 0 10px;
@@ -26,7 +26,7 @@ const FooterCSS = styled.footer`
   }
 `;
 
-const Footer = () => {
+function Footer() {
   return (
     <FooterCSS>
       <div className="box">
@@ -42,6 +42,6 @@ const Footer = () => {
       </div>
     </FooterCSS>
   );
-};
+}
 
 export default Footer;

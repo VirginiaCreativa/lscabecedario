@@ -10,9 +10,16 @@
   "customSyntax": "postcss-lit",
   "syntax": ["js", "jsx", "scss"],
   "plugins": [
+    "stylelint-config-rational-order/plugin",
     "stylelint-order"
   ],
   "rules": {
+    "plugin/rational-order": [
+      true, {
+        "border-in-box-model": false,
+        "empty-line-between-groups": true
+      }
+    ],
     "at-rule-empty-line-before": null,
     "no-descending-specificity": null,
     "no-empty-source": null,

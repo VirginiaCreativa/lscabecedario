@@ -68,7 +68,7 @@ Error generating stack: `+i.message+`
       }
     }
   }
-`;function cg(){return Y(dg,{children:fe("div",{className:"box",children:[fe("p",{children:["Found/Dev: ",Y("span",{children:"@Virginia.Creativa"})]}),fe("p",{children:["Gr\xE1fico: ",Y("span",{children:"@Arte.Dise34"})]}),fe("p",{children:["Se\xF1ante: ",Y("span",{children:"@YuliSenante"})]})]})})}var pg="./assets/Logo.7a7c4ad7.svg";const mg=pr.div``,ug=pr.img`
+`;function cg(){return Y(dg,{children:fe("div",{className:"box",children:[fe("p",{children:["Found/Dev: ",Y("span",{children:"@Virginia.Creativa"})]}),fe("p",{children:["Gr\xE1fico: ",Y("span",{children:"@Arte.Dise34"})]}),fe("p",{children:["Se\xF1ante: ",Y("span",{children:"@YuleSenante"})]})]})})}var pg="./assets/Logo.7a7c4ad7.svg";const mg=pr.div``,ug=pr.img`
   height: ${({size:t})=>t||"40px"};
 `,fg=({size:t})=>Y(Bp,{children:Y(mg,{children:Y(ug,{src:pg,alt:"Icono de Logo LSC Colombia",size:t})})}),gg=pr.header`
   display: inline-grid;

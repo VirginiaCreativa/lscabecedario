@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Layouts from './layouts/Layout';
 import Mobile from './layouts/Mobile/Mobile';
@@ -9,7 +9,6 @@ const getWidth = () =>
   document.body.clientWidth;
 
 function App() {
-  console.log(getWidth());
   return <section>{getWidth() <= 600 ? <Mobile /> : <Layouts />}</section>;
 }
 

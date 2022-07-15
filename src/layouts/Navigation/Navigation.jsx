@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from "react-router-dom"
 
 import Variable from '../../styles/VariableStyled';
 
@@ -32,16 +33,24 @@ function Navigation() {
     <NavigationCSS>
       <ul>
         <li>
-          <i className="bx bx-font" />
+          <Link to="/">
+            <i className="bx bx-font" />
+          </Link>
         </li>
         <li>
-          <i className="bx bxs-keyboard" />
+          <Link to="/all">
+            <i className="bx bxs-keyboard" />
+          </Link>
         </li>
         <li>
-          <i className="bx bx-joystick" />
+          <Link to="/games">
+            <i className="bx bx-joystick" />
+          </Link>
         </li>
         <li>
-          <i className="bx bx-book-open" />
+          <Link to="/cursos">
+            <i className="bx bx-book-open" />
+          </Link>
         </li>
       </ul>
     </NavigationCSS>

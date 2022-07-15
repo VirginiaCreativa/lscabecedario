@@ -1,19 +1,33 @@
-import React from 'react';
-import styled from 'styled-components';
+import React,  { useEffect, useState, Fragment} from 'react';
 
-function OneLetter() {
+import { Wrapper, BoxLetter} from './OneLetterStyled';
+
+
+const OneLetter = () => {
+  const [isLetter, setIsletter] = useState('a');
+
+  useEffect(() => {
+    window.addEventListener("keyup", (ev) => {
+      if (ev.key || ev.keyCode !== undefined) {
+        setIsletter(ev.key)
+        console.log(ev.key);
+      }
+    })
+  }, []);
+
   return (
-    <>
-      <div className="row">
-        <div className="col">
-          <h1>A</h1>
-        </div>
-        <div className="col">
+    <Fragment>
+      <Wrapper>
+        <div className="box">
           <img src="" alt="A" />
         </div>
-      </div>
-      <h1>Teclado</h1>
-    </>
+        <div className="box">
+          <BoxLetter>
+            <p>{isLetter}</p>
+          </BoxLetter>
+        </div>
+      </Wrapper>
+    </Fragment>
   );
 }
 

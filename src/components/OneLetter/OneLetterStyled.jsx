@@ -29,17 +29,7 @@ export const BoxLetter = styled.div`
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 	border-top: 1px solid #222;
-	-webkit-box-shadow: 
-		inset 0 0 25px #333,
-		0 1px 0 #000,
-		0 2px 0 #222,
-		0 2px 3px #333;
-	-moz-box-shadow: 
-		inset 0 0 25px #333,
-		0 1px 0 #000,
-		0 2px 0 #222,
-		0 2px 3px #333;
-	box-shadow: 
+	box-shadow:
 		inset 0 0 25px #333,
 		0 1px 0 #000,
 		0 2px 0 #222,

@@ -1,6 +1,7 @@
 import React,  { useEffect, useState, Fragment} from 'react';
 
-import { Wrapper, BoxLetter} from './OneLetterStyled';
+import { Wrapper, BoxLetter } from './OneLetterStyled';
+import { senasData } from '../../data/senas';
 
 
 const OneLetter = () => {
@@ -19,7 +20,11 @@ const OneLetter = () => {
     <Fragment>
       <Wrapper>
         <div className="box">
-          <img src="" alt="A" />
+          {
+            senasData.map((data, index) => (
+              <p key={index}> {data.key}</p>
+            ))
+          }
         </div>
         <div className="box">
           <BoxLetter>

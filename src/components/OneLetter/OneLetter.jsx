@@ -5,13 +5,14 @@ import { senasData } from '../../data/senas';
 
 
 const OneLetter = () => {
-  const [isLetter, setIsletter] = useState('a');
+  const [isLetter, setIsletter] = useState('');
+  const [hasLetter, setHasletter] = useState('a');
 
   useEffect(() => {
     window.addEventListener("keyup", (ev) => {
       if (ev.key || ev.keyCode !== undefined) {
-        setIsletter(ev.key)
-        console.log(ev.key);
+        setHasletter(ev.key)
+        console.log(hasLetter);
       }
     })
   }, []);
@@ -21,14 +22,14 @@ const OneLetter = () => {
       <Wrapper>
         <div className="box">
           {
-            senasData.map((data, index) => (
-              <p key={index}> {data.key}</p>
-            ))
+            senasData.filter(data => data.key == {hasLetter}).map((filter, index) =>  (
+              <p key={index}>{filter.images}</p>
+             ))
           }
         </div>
         <div className="box">
           <BoxLetter>
-            <p>{isLetter.toUpperCase()}</p>
+            <p>{hasLetter.toUpperCase()}</p>
           </BoxLetter>
         </div>
       </Wrapper>

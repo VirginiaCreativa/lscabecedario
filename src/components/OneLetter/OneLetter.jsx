@@ -23,7 +23,7 @@ const OneLetter = () => {
         </div>
         <div className="box">
           <BoxLetter>
-            <p>{isLetter}</p>
+            <p>{isLetter.toUpperCase()}</p>
           </BoxLetter>
         </div>
       </Wrapper>

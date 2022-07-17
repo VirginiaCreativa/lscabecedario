@@ -3,42 +3,42 @@ export const senasData = [
     id: 1,
     key: "A",
     title: "Title A",
-    images: "Senas_A"
+    images: "./src/assets/images/Senas_A.svg"
   },
   {
     id: 2,
     key: "B",
     title: "Title B",
-    images: "Senas_B"
+    images: "./src/assets/images/Senas_B.svg"
   },
   {
     id: 3,
     key: "C",
     title: "Title C",
-    images: "Senas_C"
+    images: "./src/assets/images/Senas_C.svg"
   },
   {
     id: 4,
     key: "D",
     title: "Title D",
-    images: "Senas_D"
+    images: "./src/assets/images/Senas_D.svg"
   },
   {
     id: 5,
     key: "E",
     title: "Title E",
-    images: "Senas_E"
+    images: "./src/assets/images/Senas_E.svg"
   },
   {
     id: 6,
     key: "F",
     title: "Title F",
-    images: "Senas_F"
+    images: "./src/assets/images/Senas_F.svg"
   },
   {
     id: 7,
     key: "G",
     title: "Title G",
-    images: "Senas_G"
+    images: "./src/assets/images/Senas_G.svg"
   }
 ];

@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   .box {
     &:first-child {
-      margin-bottom: 40px;
+      margin-bottom: 60px;
     }
   }
 `;

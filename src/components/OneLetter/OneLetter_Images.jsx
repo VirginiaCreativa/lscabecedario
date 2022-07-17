@@ -7,12 +7,12 @@ import { default as Senas_E} from '../../assets/images/Senas_E.svg';
 import { default as Senas_F} from '../../assets/images/Senas_F.svg';
 import { default as Senas_G} from '../../assets/images/Senas_G.svg';
 
-const OneLetter_Images = ({ numkey, alt, svg}) => {
+const OneLetter_Images = ({ numkey, alt, src}) => {
   return (
     <>
-      <img key={ numkey} alt={alt} src={svg} height="200px"/>
+      <img key={ numkey} alt={alt} src={src} height="400px"/>
     </>
-  ); 
+  );
 }
 
 export default OneLetter_Images;

@@ -2,36 +2,43 @@ export const senasData = [
   {
     id: 1,
     key: "A",
-    images: "Senas_A.svg"
+    title: "Title A",
+    images: "Senas_A"
   },
   {
     id: 2,
     key: "B",
-    images: "Senas_B.svg"
+    title: "Title B",
+    images: "Senas_B"
   },
   {
     id: 3,
     key: "C",
-    images: "Senas_C.svg"
+    title: "Title C",
+    images: "Senas_C"
   },
   {
     id: 4,
     key: "D",
-    images: "Senas_D.svg"
+    title: "Title D",
+    images: "Senas_D"
   },
   {
     id: 5,
     key: "E",
-    images: "Senas_E.svg"
+    title: "Title E",
+    images: "Senas_E"
   },
   {
     id: 6,
     key: "F",
-    images: "Senas_F.svg"
+    title: "Title F",
+    images: "Senas_F"
   },
   {
     id: 7,
     key: "G",
-    images: "Senas_G.svg"
+    title: "Title G",
+    images: "Senas_G"
   }
 ];

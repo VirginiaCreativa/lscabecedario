@@ -10,7 +10,7 @@ import { default as Senas_G} from '../../assets/images/Senas_G.svg';
 const OneLetter_Images = ({ numkey, alt, src}) => {
   return (
     <>
-      <img key={ numkey} alt={alt} src={src} height="400px"/>
+      <img key={ numkey} alt={alt} src={src} height="450px"/>
     </>
   );
 }

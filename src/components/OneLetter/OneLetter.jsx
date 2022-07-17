@@ -4,9 +4,6 @@ import { Wrapper, BoxLetter } from './OneLetterStyled';
 import { senasData } from '../../data/senas';
 import Images from './OneLetter_Images';
 
-import { default as Senas_A} from '../../assets/images/Senas_A.svg';
-
-
 const OneLetter = () => {
   const [hasLetter, setHasletter] = useState('a');
 

@@ -33,7 +33,7 @@ function Navigation() {
     <NavigationCSS>
       <ul>
         <li>
-          <Link to="/">
+          <Link to="/one">
             <i className="bx bx-font" />
           </Link>
         </li>

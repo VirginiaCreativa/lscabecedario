@@ -1,40 +1,56 @@
-import React,  { useEffect, useState, Fragment} from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 
-import { Wrapper, BoxLetter } from './OneLetterStyled';
-import { senasData } from '../../data/senas';
-import Images from './OneLetter_Images';
+import senasData from '../../data/senas';
+import { BoxLetter, Wrapper } from './OneLetterStyled';
+import Gif from './OneLetter_Gif';
+import Ilust from './OneLetter_Ilust';
 
-const OneLetter = () => {
+function OneLetter() {
   const [hasLetter, setHasletter] = useState('a');
 
   useEffect(() => {
-    window.addEventListener("keyup", (ev) => {
+    window.addEventListener('keyup', (ev) => {
       if (ev.key || ev.keyCode !== undefined) {
-        setHasletter(ev.key)
+        setHasletter(ev.key);
       }
-    })
+    });
   }, []);
 
-  const isLetter = (senasData.filter(data => data.key == hasLetter.toUpperCase()))
+  const isLetter = senasData.filter(
+    (data) => data.key === hasLetter.toUpperCase(),
+  );
 
   return (
-    <Fragment>
-      <Wrapper>
-        <div className="box">
-          {
-            isLetter.map((data, index) =>  (
-              <Images key={index} alt={data.title} src={data.images} />
-             ))
-          }
+    <Wrapper className="d-flex align-items-center justify-content-center">
+      <div className="box">
+        <div className="row">
+          <div className="col d-flex align-items-center">
+            {isLetter.map((data, index) => (
+              <Gif
+                key={index}
+                alt={`Ilustración mano de ${data.title}`}
+                src={data.gif}
+              />
+            ))}
+          </div>
+          <div className="col d-flex align-items-center justify-content-center">
+            {isLetter.map((data, index) => (
+              <Ilust
+                key={index}
+                alt={`Ilustración mano de ${data.title}`}
+                src={data.images}
+              />
+            ))}
+          </div>
         </div>
-        <div className="box">
-          <BoxLetter>
-            <p>{hasLetter.toUpperCase()}</p>
-            <img src="" alt="" />
-          </BoxLetter>
-        </div>
-      </Wrapper>
-    </Fragment>
+      </div>
+      <div className="box d-flex align-items-center justify-content-center">
+        <BoxLetter>
+          <p>{hasLetter.toUpperCase()}</p>
+          <img src="" alt="" />
+        </BoxLetter>
+      </div>
+    </Wrapper>
   );
 }
 

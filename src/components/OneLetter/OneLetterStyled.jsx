@@ -10,9 +10,6 @@ export const Wrapper = styled.div`
   height: 100%;
   .box {
     width: 80%;
-    &:first-child {
-      margin-bottom: 60px;
-    }
   }
 `;
 

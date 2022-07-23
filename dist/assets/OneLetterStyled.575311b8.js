@@ -1,4 +1,4 @@
-import{s as t}from"./index.6674bcfe.js";const o=t.div`
+import{s as e}from"./index.47b94244.js";const o=e.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,11 +6,8 @@ import{s as t}from"./index.6674bcfe.js";const o=t.div`
   height: 100%;
   .box {
     width: 80%;
-    &:first-child {
-      margin-bottom: 60px;
-    }
   }
-`,r=t.div`
+`,r=e.div`
   display: flex;
   justify-items: center;
   justify-content: center;

@@ -1,12 +1,13 @@
 import React, { Fragment, useEffect, useState } from 'react';
 
+import getSenaGif from '../../controls/getSenaGif';
+import getSenaImg from '../../controls/getSenaImg';
 import senasData from '../../data/senas';
 import { BoxLetter, Wrapper } from './OneLetterStyled';
-import Gif from './OneLetter_Gif';
-import Ilust from './OneLetter_Ilust';
 
 function OneLetter() {
   const [hasLetter, setHasletter] = useState('a');
+  const [takeImg, setTakeImg] = useState('');
 
   useEffect(() => {
     window.addEventListener('keyup', (ev) => {
@@ -22,23 +23,28 @@ function OneLetter() {
 
   return (
     <Wrapper className="d-flex align-items-center justify-content-center">
-      <div className="box">
+      <h3 className="pb-5">
+        Escribe la tecla cualquiera con tu dedo, aprenderlo LSC
+      </h3>
+      <div className="box pb-5">
         <div className="row">
           <div className="col d-flex align-items-center">
             {isLetter.map((data, index) => (
-              <Gif
+              <img
                 key={index}
                 alt={`Ilustración mano de ${data.title}`}
-                src={data.gif}
+                src={getSenaGif(data.id)}
+                className="img-fluid"
               />
             ))}
           </div>
           <div className="col d-flex align-items-center justify-content-center">
             {isLetter.map((data, index) => (
-              <Ilust
+              <img
                 key={index}
                 alt={`Ilustración mano de ${data.title}`}
-                src={data.images}
+                src={getSenaImg(data.id)}
+                className="img-fluid"
               />
             ))}
           </div>

@@ -2,6 +2,7 @@
   "extends": [
     "airbnb",
     "airbnb-base",
+    "airbnb/hooks",
     "prettier",
     "plugin:jsx-a11y/recommended",
     "eslint:recommended",
